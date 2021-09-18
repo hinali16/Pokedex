@@ -1,0 +1,153 @@
+@media screen and (min-width: 600px) {
+    .pokedex_body_menu{
+          display: flex;
+          justify-content: flex-start;
+          grid-row: 1/1;
+          grid-column:1/14;
+          background-color: rgb(179, 41, 41);
+          box-shadow: 7px -18px 71px #000000;
+      }
+    .menu li a, p{
+      text-decoration:none; 
+      padding:10px 10px 5px 0px; 
+      display:block;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu li ul li{
+      display:block;
+      width: 300px;
+      height: 4.400rem;
+      background-color: rgb(36, 3, 3);
+    }
+    .menu li ul li:first-child{
+      display:block;
+      width:300px;
+      height: 250px;
+    }
+    .menu li ul li:last-child{
+      height: 5.000rem;
+      border-bottom-right-radius:30% 90%;
+    }
+    .fotoMenu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .devfoto{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid rgb(255, 255, 255);
+      margin: 10px;
+    }
+    .icons{
+      filter: invert(1);
+      width: 50px;
+      height: 50px;
+      padding-right: 20px;
+    }
+    .material_icons{
+      font-size:2.500rem;
+      color:rgb(255, 255, 255);
+      padding:2px 30px 0px 30px
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .pokedex_body_menu{
+          display: flex;
+          justify-content: flex-start;
+          background-color: rgb(179, 41, 41);
+      box-shadow: 7px -18px 71px #000000;
+      }
+    .menu li a, p{
+      text-decoration:none;
+      color: #ffffff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 20px;
+    }
+    .menu li ul li{
+      display:block;
+      width: 300px;
+      height: 50px;
+      background-color: rgb(36, 3, 3);
+    }
+    .menu li ul li:first-child{
+      display:block;
+      width:300px;
+      height: 80px;
+    }
+    .menu li ul li:last-child{
+      height: 5.000rem;
+      border-bottom-right-radius:30% 90%;
+    }
+    .fotoMenu{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .fotoMenu p:last-child{
+      display: none;
+    }
+    .devfoto{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid rgb(255, 255, 255);
+      margin: 10px;
+    }
+    .icons{
+      filter: invert(1);
+      width: 25px;
+      height: 25px;
+      padding:0px 20px 0px 10px;
+    }
+    .material_icons{
+      font-size:2.500rem;
+      color:rgb(255, 255, 255);
+      padding:2px 30px 0px 30px
+    }
+  
+  }
+  .pokedex_body_menu{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(179, 41, 41);
+    box-shadow: 7px -18px 71px #000000;
+  }
+  .menu{
+    list-style:none;
+  }
+  .menu_branco{
+    background-color: transparent;
+  }
+  .menu li{
+  
+    position:relative;
+    padding: 0.188rem 0.313rem 0rem 0rem;
+    height: 2.625rem;
+  }
+  
+  .menu li:hover{
+    background-color: rgb(36, 3, 3);
+  }
+  .menu li a:hover{
+    background:rgb(124, 11, 11);
+  }
+  .menu li  ul{
+    margin-top: 30px;
+    position:absolute;
+    top:15px;
+    background-color:transparent;
+    display:none;
+  }
+  .menu li:hover ul, .menu li.over ul{
+    display:block;
+  }
+  
+  
