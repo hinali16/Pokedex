@@ -19,7 +19,7 @@ function MenuDrop (){
                                 <li><a href="https://www.facebook.com/Hinaliboldrim/"><img className={styles.icons}src={FaceIcon} alt="faceimg"/>FaceBook</a></li>
                                 <li><a href="https://www.instagram.com/hinaliboldrim/"><img className={styles.icons} src={InstaIcon} alt="instaimg"/>Instagram</a></li>
                                 <li><a href="https://www.linkedin.com/in/vanessa-carlos-277973206/"><img className={styles.icons} src={LinkIcon} alt="linkimg"/>Linkedin</a></li>
-                                <li><a href="https://github.com/hinali16"><img className={styles.icons} src={GitIcon} alt="gitimg"/>Github</a></li>
+                                <li><a href="https://github.com/hinali16"><img className={styles.icons} src={GitIcon} alt="instaimg"/>Github</a></li>
                                 <li><a href="https://pokeapi.co/">Link da API utilizada</a></li>
                             </ul>
                     </li>
