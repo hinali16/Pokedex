@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f1da73e.chunk.css",
+    "main.js": "/static/js/main.b36e7291.chunk.js",
+    "main.js.map": "/static/js/main.b36e7291.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1d0ffd1f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1d0ffd1f.js.map",
+    "static/js/2.99ad30f0.chunk.js": "/static/js/2.99ad30f0.chunk.js",
+    "static/js/2.99ad30f0.chunk.js.map": "/static/js/2.99ad30f0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.8f1da73e.chunk.css.map": "/static/css/main.8f1da73e.chunk.css.map",
+    "static/js/2.99ad30f0.chunk.js.LICENSE.txt": "/static/js/2.99ad30f0.chunk.js.LICENSE.txt",
+    "static/media/Desenvolvedora.5738f7a9.jpg": "/static/media/Desenvolvedora.5738f7a9.jpg",
+    "static/media/github.44eee0c4.png": "/static/media/github.44eee0c4.png",
+    "static/media/instagram.edb90ecc.png": "/static/media/instagram.edb90ecc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d0ffd1f.js",
+    "static/js/2.99ad30f0.chunk.js",
+    "static/css/main.8f1da73e.chunk.css",
+    "static/js/main.b36e7291.chunk.js"
+  ]
+}
