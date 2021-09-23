@@ -4,6 +4,7 @@ import FaceIcon from '../../img/facebook.png';
 import InstaIcon from '../../img/instagram.png';
 import LinkIcon from '../../img/linkedin.png';
 import GitIcon from '../../img/github.png';
+import { Paragrafo } from '../styles';
 import { Container, Menu, MenuPokebola, IconPokebola, UlMenu, FotoDev, LinksRede, LinkAPI } from "./MenuDropWrapper"
 
 export default function MenuDrop (){
@@ -18,8 +19,8 @@ export default function MenuDrop (){
                             <FotoDev>
                                 <div>
                                     <img src={MinhaFoto} alt="devimg"/>
-                                    <p>Seja bem vindo Treinador</p>
-                                    <p>Obrigado pela visita!</p>
+                                    <Paragrafo>Seja bem vindo Treinador</Paragrafo>
+                                    <Paragrafo>Obrigado pela visita!</Paragrafo>
                                 </div>
                             </FotoDev>
                             <LinksRede>
