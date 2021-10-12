@@ -4,6 +4,11 @@ import { Paragrafo } from '../styles';
 import { Logo, PokedexContainerImg, CampoDePesquisa, ButtonGo, ImgPokebola, DigitePokemon } from './PesquisaPokemonWrapper';
 
 export default function PesquisaPokemon(){
+
+    function chamadaPkm(e){
+        e.preventDefault()
+        console.log("Testando");
+    };
     return(
         <>
             <Logo src={logo} alt="pokedexImg"/>
@@ -12,8 +17,8 @@ export default function PesquisaPokemon(){
             </PokedexContainerImg>
             <CampoDePesquisa>
                 <Paragrafo>Digite um nome ou numero do pokemon!</Paragrafo>
-                <DigitePokemon/>
-                <ButtonGo>GO!</ButtonGo>
+                <DigitePokemon />
+                <ButtonGo onClick={chamadaPkm}>GO!</ButtonGo>
             </CampoDePesquisa>
         </>
     )

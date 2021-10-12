@@ -18,9 +18,9 @@ export const PokedexContainerImg = styled.div`
     animation: treme 1s alternate;
     animation-iteration-count: infinite ;
 
-        p{
-            width: 250px ;
-            height: 250px;
+        img{
+            width: 210px;
+            height: 210px;
             border-radius: 50%;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
         }
@@ -76,7 +76,7 @@ export const DigitePokemon = styled.input`
     justify-content: center;
     text-align: center;
     font-size: 35px;
-    width: 400px;
+    width: 350px;
     height: 60px;
     color: azure;
     background-color: transparent;
@@ -96,7 +96,7 @@ export const ButtonGo = styled.button`
     font-weight: 600;
     color: rgb(255, 255, 255);
     background-color: rgb(238, 184, 69);
-    width: 400px;
+    width: 350px;
     height: 80px;
     border-radius: 7px;
     border: none;
