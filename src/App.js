@@ -27,14 +27,15 @@ export default function App() {
 }
 
 const Container = styled.div`
-    font-family: Poppins;
-    background-color: rgb(179, 41, 41);
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
-    grid-template-rows: 45px 25.33% 33.33% 23.33% 10%;
-`
+  font-family: Poppins;
+  background-color: rgb(179, 41, 41);
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+  grid-template-rows: 45px 23.33% 0.99fr 23.33% 30px;
+  overflow-x: hidden;
+`;
 
 const Footer = styled.div`
     grid-column:5/9;
