@@ -144,7 +144,8 @@ const CardPokemonDetalhes = styled.div`
 `;
 
 const NomeID = styled.div`  
-  background-color:#c597c3;
+  background-image:url('https://acegif.com/wp-content/gifs/fire-11.gif');
+  background-position: center;
   display:flex;
   flex-direction:row;
   width:100%;
