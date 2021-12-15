@@ -8,8 +8,9 @@ import { Logo, PokedexContainerImg, CampoDePesquisa, ButtonGo, ImgPokebola, Digi
 
 export default function PesquisaPokemon(){
     const [pesquisando, setPesquisando] = useState('');
-    const [pokemon, setPokemon] = useState();
+    const [pokemon, setPokemon] = useState("");
     const [loading, setLoading] = useState(true);
+    const [testeTipoPokemon, settesteTipoPokemon] = useState("")
 
  
 
@@ -18,12 +19,14 @@ export default function PesquisaPokemon(){
       const req = axios.get(`https://pokeapi.co/api/v2/pokemon/${pesquisando.toLocaleLowerCase()}`)
       req.then(({data})=>{
             setPokemon(data);
+            settesteTipoPokemon(data.types[0].type.name)
             setLoading(false);
+            console.log(data)
         });
       }
     }
 
-
+    
     let pesoComVirgula = parseInt(pokemon?.weight + '0');
     function separator(numb) {
       var str = numb.toString().split(".");
@@ -35,7 +38,7 @@ export default function PesquisaPokemon(){
           buscarPokemon();
         }
       };
-    console.log(separator(pesoComVirgula));
+
     return (
       <>
         <Logo src={logo} alt="pokedexImg" />
@@ -50,7 +53,7 @@ export default function PesquisaPokemon(){
         ) : (
           <CardPokemon>
             <CardPokemonFoto>
-              <NomeID>
+              <NomeID pokemon={pokemon}>
                 <p>{pokemon.name}</p>
                 <span>#{pokemon.id}</span>
               </NomeID>
@@ -62,8 +65,8 @@ export default function PesquisaPokemon(){
             </CardPokemonFoto>
             <CardPokemonDetalhes>
               <TipoPokemon>
-                {pokemon.types.map((x,index) => {   
-                  return <Colunas><p>{x.type.name}</p></Colunas>})}
+                {pokemon.types.map((x,i) => {   
+                  return <Colunas key={i} ><p>{x.type.name}</p></Colunas>})}
               </TipoPokemon>
               <ContainerColunas>
                 <Colunas>
@@ -143,8 +146,25 @@ const CardPokemonDetalhes = styled.div`
   border-radius: 0px 10px 10px 0px;
 `;
 
-const NomeID = styled.div`  
-  background-image:url('https://acegif.com/wp-content/gifs/fire-11.gif');
+const NomeID = styled.div`
+  background-image: ${props => 
+    props.pokemon.types[0].type.name === "bug" ? 'url(https://cdn.cloudflare.steamstatic.com/steam/apps/1372210/extras/door.gif?t=1599695585)' : 
+      props.pokemon.types[0].type.name === "dark" ? 'url(https://64.media.tumblr.com/1c515c6b4e072c04e5ad3083d974b3fa/tumblr_pwlcr7YxJj1xvwkewo1_540.gif)' :
+        props.pokemon.types[0].type.name === "dragon" ? '#62cad9' :
+          props.pokemon.types[0].type.name === "electric" ? 'url(https://i.pinimg.com/originals/c1/12/f6/c112f6b4e480c8154b4fe86f8c2d0913.gif)' :
+            props.pokemon.types[0].type.name === "fairy" ? 'url(https://i.pinimg.com/originals/03/5e/5a/035e5acba8f1e9a20498ae1ca5902ca7.gif)' : 
+              props.pokemon.types[0].type.name === "fighting" ? '#ef6239' : 
+                props.pokemon.types[0].type.name === "fire" ? 'url(https://acegif.com/wp-content/gifs/fire-11.gif)' :
+                  props.pokemon.types[0].type.name === "flying" ? 'url(https://i.pinimg.com/originals/3c/34/1c/3c341c7e85cd0da74b03145bf4937133.gif)' : 
+                    props.pokemon.types[0].type.name === "ghost" ? '#460d6d' :
+                      props.pokemon.types[0].type.name === "grass" ? 'url(https://i.gifer.com/origin/74/74373679b153f61c543c4ff75ceddda5.gif)' :
+                        props.pokemon.types[0].type.name === "ice" ? '#d8f0fa' : 
+                          props.pokemon.types[0].type.name === "normal" ? '#fff0c0' : 
+                            props.pokemon.types[0].type.name === "poison" ? 'url(https://i.pinimg.com/originals/cd/83/e3/cd83e34992570d14493c163c3ff3d42d.gif)' :
+                              props.pokemon.types[0].type.name === "psychic" ? 'url(https://cdn.discordapp.com/attachments/322839218676170753/917554584405303296/9rVP.gif)' :
+                                props.pokemon.types[0].type.name === "rock" ? '#8b3e22' :
+                                  props.pokemon.types[0].type.name === "steel" ? '#60756e' : 'url(https://pa1.narvii.com/7676/3d56929a158debbe58f4625986afa45533e7ce69r1-640-482_hq.gif)'
+  };
   background-position: center;
   display:flex;
   flex-direction:row;

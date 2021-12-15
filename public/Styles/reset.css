@@ -53,3 +53,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+:root{
+	--bug: #707e59;
+	--dark: #21215a;
+	--dragon: #62cad9;
+	--electric: #eed277;
+	--fairy: #ff7fb2;
+	--fighting: #ef6239;
+	--fire: #d44f5a;
+	--flying: #94b2c7;
+	--ghost: #460d6d;
+	--grass:#70ca86;
+	--ground: #6e491f;
+	--ice: #d8f0fa;
+	--normal: #fff0c0;
+	--poison: rgb(94, 57, 116);
+	--psychic: #cc207c;
+	--rock: #8b3e22;
+	--steel: #60756e;
+	--water:#5d80d1;
+  }
